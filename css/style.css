@@ -356,6 +356,7 @@ body{
 }
 
 
+
 @media only screen and (min-width : 321px) and (max-width: 361px) {
 	#imagenpersona {
 		top: 18%;
@@ -409,7 +410,7 @@ body{
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : portrait){
 /* Styles */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
 	/*width: 100%;
@@ -596,8 +597,17 @@ body{
 }
 
 
+@media only screen and (min-width : 979px) and (max-width: 981px) {
+	#score {
+		top: 49%;
+	}
+}
 
-
+@media only screen and (min-width : 799px) and (max-width: 801px) {
+	#score {
+		top: 48%;
+	}
+}
 
 
 
