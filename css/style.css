@@ -2,7 +2,7 @@ body{
 	background-color: #085BA7;
 }
 
-#welcome, #fangate, #step0{
+#welcome, #fangate, #step0, #step1{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -21,13 +21,22 @@ body{
 #step0 {
 	background-image: url('../img/step0.jpg');
 }
-#btnlike, #btnjoin {
+#step1 {
+	background-image: url('../img/step1.jpg');
+}
+#btnlike, #btnjoin, #btntakepic {
 	width: 313px;
 	height: 87px;
 	position: absolute;
 	left: 115px;
 	top: 450px;
 	cursor: pointer;
+}
+#btntakepic {
+	width: 330px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 #timmer{
 	width: 380px;
@@ -56,7 +65,7 @@ body{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
-	#welcome, #fangate, #step0{
+	#welcome, #fangate, #step0, #step1{
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
@@ -73,6 +82,9 @@ body{
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+	#step1 {
+		background-image: url('../img/step1.jpg');
+	}
 	#timmer{
 		width: 150px;
 		height: 36px;
@@ -86,11 +98,14 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
-	#btnlike, #btnjoin {
+	#btnlike, #btnjoin, #btntakepic {
 		top: 37%;
 		left: 14%;
 		height: 35px;
 		width: 125px;
+	}
+	#btntakepic {
+		left: 0;
 	}
 	#btnverbases{
 		position: absolute;
@@ -106,7 +121,7 @@ body{
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
 /* Styles */
-	#welcome, #fangate, #step0 {
+	#welcome, #fangate, #step0, #step1 {
 		min-height: 460px;
 	}
 	#timmer{
@@ -122,13 +137,16 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
-	#btnlike, #btnjoin {
+	#btnlike, #btnjoin, #btntakepic {
 		width: 186px;
 		height: 51px;
 		position: absolute;
 		left: 14%;
 		top: 58%;
 		cursor: pointer;
+	}
+	#btntakepic {
+		left: 0;
 	}
 	#btnverbases{
 		position: absolute;
@@ -153,7 +171,7 @@ body{
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 /* Styles */
-	#welcome, #fangate, #step0{
+	#welcome, #fangate, #step0, #step1{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -173,17 +191,23 @@ body{
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+	#step1 {
+		background-image: url('../img/step1.jpg');
+	}
 	#timmer{
 		top: 56%;
 		left: 8%;
 	}
-	#btnlike, #btnjoin {
+	#btnlike, #btnjoin, #btntakepic {
 		width: 290px;
 		height: 80px;
 		position: absolute;
 		left: 108px;
 		top: 418px;
 		cursor: pointer;
+	}
+	#btntakepic {
+		left: 0;
 	}
 	#btnverbases{
 		left: 3%;
@@ -194,7 +218,7 @@ body{
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 /* Styles */
-	#welcome, #fangate, #step0{
+	#welcome, #fangate, #step0, #step1{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -215,15 +239,21 @@ body{
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+	#step1 {
+		background-image: url('../img/step1.jpg');
+	}
 	#timmer{
 		top: 61%;
 		left: 17%;
 	}
-	#btnlike, #btnjoin {
+	#btnlike, #btnjoin, #btntakepic {
 		top: 56%;
 		left: 21%;
 		height: 85px;
 		width: 314px;
+	}
+	#btntakepic {
+		left: 0;
 	}
 	#btnverbases{
 		left: 14%;
