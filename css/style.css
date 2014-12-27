@@ -81,6 +81,14 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
+	#btnlike {
+		width: 313px;
+		height: 87px;
+		position: absolute;
+		left: 115px;
+		top: 450px;
+		cursor: pointer;
+	}
 	#btnverbases{
 		position: absolute;
 		top: 56%;
@@ -110,6 +118,14 @@ body{
 		font-size: 18px;
 		text-align: center;
 		padding: 15px 0px 0px;
+	}
+	#btnlike {
+		width: 313px;
+		height: 87px;
+		position: absolute;
+		left: 115px;
+		top: 450px;
+		cursor: pointer;
 	}
 	#btnverbases{
 		position: absolute;
@@ -155,6 +171,14 @@ body{
 		top: 56%;
 		left: 8%;
 	}
+	#btnlike {
+		width: 290px;
+		height: 80px;
+		position: absolute;
+		left: 108px;
+		top: 418px;
+		cursor: pointer;
+	}
 	#btnverbases{
 		left: 3%;
 		top: 630px;
@@ -164,7 +188,7 @@ body{
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 /* Styles */
-	#welcome{
+	#welcome, #fangate{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -185,6 +209,12 @@ body{
 	#timmer{
 		top: 61%;
 		left: 17%;
+	}
+	#btnlike {
+		top: 56%;
+		left: 21%;
+		height: 85px;
+		width: 314px;
 	}
 	#btnverbases{
 		left: 14%;
