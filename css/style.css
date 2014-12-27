@@ -275,7 +275,7 @@ body{
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-width: 480px) {
+@media only screen and (min-width : 370px) and (max-width: 480px) {
 /* Styles */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0 {
 		min-height: 460px;
@@ -352,6 +352,49 @@ body{
 		width: 80%;
 		height: 50px;
 		cursor: pointer;
+	}
+}
+
+
+@media only screen and (min-width : 321px) and (max-width: 361px) {
+	#imagenpersona {
+		top: 18%;
+		height: 120px;
+		width: 120px;
+	}
+	#milagropunto {
+		top: 39%;
+		font-size: 14px;
+	}
+	#btnvotar {
+		top: 43%;
+		padding: 5px;
+		font-size: 13px;
+	}
+	#graciasvoto {
+		top: 43%;
+		font-size: 16px;
+	}
+	#timmer {
+		top: 30%;
+		left: 12%;
+	}
+	#btnlike, #btnjoin, #btntakepic {
+		top: 31%;
+		height: 40px;
+		width: 140px;
+	}
+	#btnverbases {
+		top: 47%;
+	}
+	#score {
+		top: 28%;
+	}
+	#btnok {
+		top: 37%;
+	}
+	#btntwitter, #btnfacebook {
+		top: 32%;
 	}
 }
 
@@ -552,25 +595,9 @@ body{
 	}
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-/* Styles */
-}
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px){
-/* Styles */
-}
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px){
-/* Styles */
-}
 
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5){
-/* Styles */
-}
 
 
 
