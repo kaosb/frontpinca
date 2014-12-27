@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$('#welcome').show();
-	$('#timmer').countdown('2014/12/29', function(event) {
-		$(this).text(event.strftime('%D días %H:%M:%S'));
-	});
+	$('#fangate').show();
 	$('#btnverbases').click(function(event){
 		verBases();
+	});
+	$('#btnlike').click(function(event){
+		$('#likecanvas').show();
 	});
 });
 
