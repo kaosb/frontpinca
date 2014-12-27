@@ -2,7 +2,7 @@ body{
 	background-color: #085BA7;
 }
 
-#welcome, #fangate{
+#welcome, #fangate, #step0{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -18,8 +18,10 @@ body{
 #fangate {
 	background-image: url('../img/fangate.jpg');
 }
-
-#btnlike {
+#step0 {
+	background-image: url('../img/step0.jpg');
+}
+#btnlike, #btnjoin {
 	width: 313px;
 	height: 87px;
 	position: absolute;
@@ -54,7 +56,7 @@ body{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
-	#welcome, #fangate{
+	#welcome, #fangate, #step0{
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
@@ -67,6 +69,9 @@ body{
 	}
 	#fangate {
 		background-image: url('../img/fangate.jpg');
+	}
+	#step0 {
+		background-image: url('../img/step0.jpg');
 	}
 	#timmer{
 		width: 150px;
@@ -81,7 +86,7 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
-	#btnlike {
+	#btnlike, #btnjoin {
 		top: 58%;
 		left: 14%;
 		height: 50px;
@@ -101,7 +106,7 @@ body{
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
 /* Styles */
-	#welcome, #fangate {
+	#welcome, #fangate, #step0 {
 		min-height: 460px;
 	}
 	#timmer{
@@ -117,7 +122,7 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
-	#btnlike {
+	#btnlike, #btnjoin {
 		width: 125px;
 		height: 35px;
 		position: absolute;
@@ -148,7 +153,7 @@ body{
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 /* Styles */
-	#welcome, #fangate{
+	#welcome, #fangate, #step0{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -165,11 +170,14 @@ body{
 	#fangate {
 		background-image: url('../img/fangate.jpg');
 	}
+	#step0 {
+		background-image: url('../img/step0.jpg');
+	}
 	#timmer{
 		top: 56%;
 		left: 8%;
 	}
-	#btnlike {
+	#btnlike, #btnjoin {
 		width: 290px;
 		height: 80px;
 		position: absolute;
@@ -186,7 +194,7 @@ body{
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 /* Styles */
-	#welcome, #fangate{
+	#welcome, #fangate, #step0{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -204,11 +212,14 @@ body{
 	#fangate {
 		background-image: url('../img/fangate.jpg');
 	}
+	#step0 {
+		background-image: url('../img/step0.jpg');
+	}
 	#timmer{
 		top: 61%;
 		left: 17%;
 	}
-	#btnlike {
+	#btnlike, #btnjoin {
 		top: 56%;
 		left: 21%;
 		height: 85px;
