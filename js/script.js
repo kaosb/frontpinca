@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+$(document).ready(function(){
+	$('#welcome').show();
 	$('#timmer').countdown('2014/12/29', function(event) {
 		$(this).text(event.strftime('%D días %H:%M:%S'));
 	});
