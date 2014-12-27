@@ -240,6 +240,24 @@ body{
 	#btnfacebook {
 		right: 39%;
 	}
+	#imagenpersona {
+		top: 20%;
+		height: 100px;
+		width: 100px;
+	}
+	#milagropunto {
+		top: 44%;
+		font-size: 14px;
+	}
+	#btnvotar {
+		top: 49%;
+		padding: 5px;
+		font-size: 13px;
+	}
+	#graciasvoto {
+		top: 49%;
+		font-size: 16px;
+	}
 	#score {
 		height: 45px;
 		width: 38%;
@@ -308,6 +326,24 @@ body{
 		height: 45px;
 		width: 38%;
 		top: 52%;
+	}
+	#imagenpersona {
+		top: 34%;
+		height: 150px;
+		width: 150px;
+	}
+	#milagropunto {
+		top: 71%;
+		font-size: 14px;
+	}
+	#btnvotar {
+		top: 78%;
+		padding: 5px;
+		font-size: 13px;
+	}
+	#graciasvoto {
+		top: 78%;
+		font-size: 16px;
 	}
 	#btnverbases{
 		position: absolute;
