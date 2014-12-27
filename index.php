@@ -14,5 +14,29 @@
 		<div id="timmer"></div>
 		<div id="btnverbases"></div>
 	</div>
+	<div id="fangate">
+		<div id="btnlike"></div>
+		<div id="btnverbases"></div>
+	</div>
+	<div id="step0">
+		<div id="btnjoin"></div>
+		<div id="btnverbases"></div>
+	</div>
+	<div id="step1">
+		<div id="btntakepic"></div>
+	</div>
+	<div id="step2">
+		<input id="score" type="number" name="" value="0">
+		<div id="btnok"></div>
+	</div>
+	<div id="step3">
+		<div id="btntwitter"></div>
+		<div id="btnfacebook"></div>
+	</div>
+	<div id="vote0">
+		<span>#milogrocpech fue 900 puntos :)</span>
+		<div id="btnvotar"></div>
+		<span>¡¡Gracias por tu voto!!</span>
+	</div>
 </body>
 </html>
