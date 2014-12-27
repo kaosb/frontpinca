@@ -2,7 +2,7 @@ body{
 	background-color: #085BA7;
 }
 
-#welcome, #fangate, #step0, #step1{
+#welcome, #fangate, #step0, #step1, #step2, #step3{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -24,6 +24,12 @@ body{
 #step1 {
 	background-image: url('../img/step1.jpg');
 }
+#step2 {
+	background-image: url('../img/step2.jpg');
+}
+#step3 {
+	background-image: url('../img/step3.jpg');
+}
 #btnlike, #btnjoin, #btntakepic {
 	width: 313px;
 	height: 87px;
@@ -34,6 +40,32 @@ body{
 }
 #btntakepic {
 	width: 330px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+#btnok {
+	width: 255px;
+	height: 67px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 538px;
+	cursor: pointer;
+}
+#score {
+	border: 0;
+	background: transparent;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 24px;
+	position: absolute;
+	padding: 0px;
+	height: 98px;
+	width: 340px;
+	top: 398px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -65,7 +97,7 @@ body{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
-	#welcome, #fangate, #step0, #step1{
+	#welcome, #fangate, #step0, #step1, #step2, #step3{
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
@@ -84,6 +116,12 @@ body{
 	}
 	#step1 {
 		background-image: url('../img/step1.jpg');
+	}
+	#step2 {
+		background-image: url('../img/step2.jpg');
+	}
+	#step3 {
+		background-image: url('../img/step3.jpg');
 	}
 	#timmer{
 		width: 150px;
@@ -121,7 +159,7 @@ body{
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
 /* Styles */
-	#welcome, #fangate, #step0, #step1 {
+	#welcome, #fangate, #step0, #step1, #step2, #step3 {
 		min-height: 460px;
 	}
 	#timmer{
@@ -171,7 +209,7 @@ body{
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 /* Styles */
-	#welcome, #fangate, #step0, #step1{
+	#welcome, #fangate, #step0, #step1, #step2, #step3{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -194,6 +232,12 @@ body{
 	#step1 {
 		background-image: url('../img/step1.jpg');
 	}
+	#step2 {
+		background-image: url('../img/step2.jpg');
+	}
+	#step3 {
+		background-image: url('../img/step3.jpg');
+	}
 	#timmer{
 		top: 56%;
 		left: 8%;
@@ -209,6 +253,16 @@ body{
 	#btntakepic {
 		left: 0;
 	}
+	#btnok {
+		width: 255px;
+		height: 67px;
+		top: 497px;
+	}
+	#score {
+		height: 98px;
+		width: 310px;
+		top: 366px;
+	}
 	#btnverbases{
 		left: 3%;
 		top: 630px;
@@ -218,7 +272,7 @@ body{
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 /* Styles */
-	#welcome, #fangate, #step0, #step1{
+	#welcome, #fangate, #step0, #step1, #step2, #step3{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -242,6 +296,12 @@ body{
 	#step1 {
 		background-image: url('../img/step1.jpg');
 	}
+	#step2 {
+		background-image: url('../img/step2.jpg');
+	}
+	#step3 {
+		background-image: url('../img/step3.jpg');
+	}
 	#timmer{
 		top: 61%;
 		left: 17%;
@@ -254,6 +314,16 @@ body{
 	}
 	#btntakepic {
 		left: 0;
+	}
+	#btnok {
+		width: 255px;
+		height: 67px;
+		top: 538px;
+	}
+	#score {
+		height: 98px;
+		width: 335px;
+		top: 398px;
 	}
 	#btnverbases{
 		left: 14%;
