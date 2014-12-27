@@ -79,6 +79,49 @@ body{
 	height: 300px;
 	width: 300px;
 }
+#milagropunto {
+	position: absolute;
+	top: 590px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	color: #fff;
+	width: 80%;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+}
+#btnvotar {
+	position: absolute;
+	top: 635px;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #f39905;
+	border: 1px solid #fff;
+	padding: 12px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100px;
+	text-decoration: none;
+}
+#graciasvoto {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #c5d220;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 635px;
+	position: absolute;
+}
 #score {
 	border: 0;
 	background: transparent;
