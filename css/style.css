@@ -54,6 +54,19 @@ body{
 	top: 538px;
 	cursor: pointer;
 }
+#btntwitter, #btnfacebook {
+	position: absolute;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	top: 462px;
+}
+#btntwitter {
+	left: 327px;
+}
+#btnfacebook {
+	right: 307px;
+}
 #score {
 	border: 0;
 	background: transparent;
@@ -150,6 +163,19 @@ body{
 		height: 30px;
 		top: 44%;
 	}
+	#btntwitter, #btnfacebook {
+		position: absolute;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		top: 38%;
+	}
+	#btntwitter {
+		left: 41%;
+	}
+	#btnfacebook {
+		right: 39%;
+	}
 	#score {
 		height: 45px;
 		width: 38%;
@@ -200,6 +226,19 @@ body{
 		width: 32%;
 		height: 43px;
 		top: 69%;
+	}
+	#btntwitter, #btnfacebook {
+		position: absolute;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		top: 59%;
+	}
+	#btntwitter {
+		left: 40%;
+	}
+	#btnfacebook {
+		right: 39%;
 	}
 	#score {
 		height: 45px;
@@ -278,6 +317,19 @@ body{
 		height: 67px;
 		top: 497px;
 	}
+	#btntwitter, #btnfacebook {
+		position: absolute;
+		cursor: pointer;
+		width: 72px;
+		height: 72px;
+		top: 428px;
+	}
+	#btntwitter {
+		left: 306px;
+	}
+	#btnfacebook {
+		right: 295px;
+	}
 	#score {
 		height: 98px;
 		width: 275px;
@@ -339,6 +391,19 @@ body{
 		width: 255px;
 		height: 67px;
 		top: 538px;
+	}
+	#btntwitter, #btnfacebook {
+		position: absolute;
+		cursor: pointer;
+		width: 78px;
+		height: 78px;
+		top: 462px;
+	}
+	#btntwitter {
+		left: 428px;
+	}
+	#btnfacebook {
+		right: 416px;
 	}
 	#score {
 		height: 98px;
