@@ -145,6 +145,16 @@ body{
 	#btntakepic {
 		left: 0;
 	}
+	#btnok {
+		width: 32%;
+		height: 30px;
+		top: 44%;
+	}
+	#score {
+		height: 45px;
+		width: 38%;
+		top: 32%;
+	}
 	#btnverbases{
 		position: absolute;
 		top: 56%;
@@ -185,6 +195,16 @@ body{
 	}
 	#btntakepic {
 		left: 0;
+	}
+	#btnok {
+		width: 32%;
+		height: 43px;
+		top: 69%;
+	}
+	#score {
+		height: 45px;
+		width: 38%;
+		top: 52%;
 	}
 	#btnverbases{
 		position: absolute;
@@ -260,7 +280,7 @@ body{
 	}
 	#score {
 		height: 98px;
-		width: 310px;
+		width: 275px;
 		top: 366px;
 	}
 	#btnverbases{
@@ -322,7 +342,7 @@ body{
 	}
 	#score {
 		height: 98px;
-		width: 335px;
+		width: 295px;
 		top: 398px;
 	}
 	#btnverbases{
