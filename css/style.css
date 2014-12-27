@@ -70,6 +70,15 @@ body{
 #btnfacebook {
 	right: 307px;
 }
+#imagenpersona {
+	position: absolute;
+	top: 265px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 300px;
+	width: 300px;
+}
 #score {
 	border: 0;
 	background: transparent;
