@@ -39,6 +39,7 @@ body{
 	cursor: pointer;
 }
 
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
@@ -51,7 +52,7 @@ body{
 		left: 0px;
 		background-image: url('../img/bg0_max480.jpg');
 		background-repeat: no-repeat;
-		background-size: 100% auto;*/
+		background-size: 100% auto;
 	}
 	#timmer{
 		width: 150px;
@@ -68,10 +69,40 @@ body{
 	}
 	#btnverbases{
 		position: absolute;
-		top: 680px;
-		left: 42px;
-		width: 552px;
-		height: 88px;
+		top: 56%;
+		left: 3%;
+		width: 80%;
+		height: 40px;
+		cursor: pointer;
+	}
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+	#welcome {
+		min-height: 460px;
+	}
+	#timmer{
+		width: 150px;
+		height: 36px;
+		position: absolute;
+		left: 18%; /*45px;*/
+		top: 59%; /*32%;*/
+		cursor: pointer;
+		font-family: sans-serif;
+		font-weight: bolder;
+		font-size: 18px;
+		text-align: center;
+		padding: 15px 0px 0px;
+	}
+	#btnverbases{
+		position: absolute;
+		top: 88%;
+		left: 3%;
+		width: 80%;
+		height: 50px;
 		cursor: pointer;
 	}
 }
