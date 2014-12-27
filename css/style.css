@@ -1,6 +1,44 @@
 body{
 	background-color: #085BA7;
 }
+
+#welcome{
+	/*width: 100%;
+	height: 100%;
+	z-index: 1000;*/
+	position: relative;
+	/*top: 15%;
+	left: 0px;*/
+	background-image: url('../img/bg0.jpg');
+	background-repeat: no-repeat;
+	width: 801px;
+	height: 805px;
+	margin: 0 auto; 
+}
+
+#timmer{
+	width: 380px;
+	height: 36px;
+	position: absolute;
+	left: 80px;
+	top: 480px;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	text-align: center;
+	padding: 15px 0px 0px;
+}
+
+#btnverbases{
+	position: absolute;
+	top: 680px;
+	left: 42px;
+	width: 552px;
+	height: 88px;
+	cursor: pointer;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
