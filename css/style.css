@@ -2,7 +2,7 @@ body{
 	background-color: #085BA7;
 }
 
-#welcome{
+#welcome, #fangate{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -15,7 +15,18 @@ body{
 	height: 805px;
 	margin: 0 auto; 
 }
+#fangate {
+	background-image: url('../img/fangate.jpg');
+}
 
+#btnlike {
+	width: 313px;
+	height: 87px;
+	position: absolute;
+	left: 115px;
+	top: 450px;
+	cursor: pointer;
+}
 #timmer{
 	width: 380px;
 	height: 36px;
@@ -43,7 +54,7 @@ body{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
-	#welcome{
+	#welcome, #fangate{
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
@@ -53,6 +64,9 @@ body{
 		background-image: url('../img/bg0_max480.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
+	}
+	#fangate {
+		background-image: url('../img/fangate.jpg');
 	}
 	#timmer{
 		width: 150px;
@@ -81,7 +95,7 @@ body{
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
 /* Styles */
-	#welcome {
+	#welcome, #fangate {
 		min-height: 460px;
 	}
 	#timmer{
@@ -120,7 +134,7 @@ body{
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 /* Styles */
-	#welcome{
+	#welcome, #fangate{
 	/*width: 100%;
 	height: 100%;
 	z-index: 1000;*/
@@ -133,6 +147,9 @@ body{
 	width: 100%;
 	display: block;
 	margin: 0 auto; 
+	}
+	#fangate {
+		background-image: url('../img/fangate.jpg');
 	}
 	#timmer{
 		top: 56%;
@@ -161,6 +178,9 @@ body{
 	display: block;
 	margin: 0 auto; 
 	background-position: top center;
+	}
+	#fangate {
+		background-image: url('../img/fangate.jpg');
 	}
 	#timmer{
 		top: 61%;
