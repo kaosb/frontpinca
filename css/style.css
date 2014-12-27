@@ -82,12 +82,10 @@ body{
 		padding: 15px 0px 0px;
 	}
 	#btnlike {
-		width: 313px;
-		height: 87px;
-		position: absolute;
-		left: 115px;
-		top: 450px;
-		cursor: pointer;
+		top: 58%;
+		left: 14%;
+		height: 50px;
+		width: 186px;
 	}
 	#btnverbases{
 		position: absolute;
@@ -120,11 +118,11 @@ body{
 		padding: 15px 0px 0px;
 	}
 	#btnlike {
-		width: 313px;
-		height: 87px;
+		width: 125px;
+		height: 35px;
 		position: absolute;
-		left: 115px;
-		top: 450px;
+		left: 14%;
+		top: 37%;
 		cursor: pointer;
 	}
 	#btnverbases{
