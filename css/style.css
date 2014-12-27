@@ -3,36 +3,38 @@ body{
 }
 
 #welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
-	/*width: 100%;
-	height: 100%;
-	z-index: 1000;*/
 	position: relative;
-	/*top: 15%;
-	left: 0px;*/
 	background-image: url('../img/bg0.jpg');
 	background-repeat: no-repeat;
 	width: 801px;
 	height: 805px;
 	margin: 0 auto; 
 }
+
 #fangate {
 	background-image: url('../img/fangate.jpg');
 }
+
 #step0 {
 	background-image: url('../img/step0.jpg');
 }
+
 #step1 {
 	background-image: url('../img/step1.jpg');
 }
+
 #step2 {
 	background-image: url('../img/step2.jpg');
 }
+
 #step3 {
 	background-image: url('../img/step3.jpg');
 }
+
 #vote0 {
 	background-image: url('../img/vote0.jpg');
 }
+
 #btnlike, #btnjoin, #btntakepic {
 	width: 313px;
 	height: 87px;
@@ -41,12 +43,14 @@ body{
 	top: 450px;
 	cursor: pointer;
 }
+
 #btntakepic {
 	width: 330px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
+
 #btnok {
 	width: 255px;
 	height: 67px;
@@ -57,6 +61,7 @@ body{
 	top: 538px;
 	cursor: pointer;
 }
+
 #btntwitter, #btnfacebook {
 	position: absolute;
 	cursor: pointer;
@@ -64,12 +69,15 @@ body{
 	height: 80px;
 	top: 462px;
 }
+
 #btntwitter {
 	left: 327px;
 }
+
 #btnfacebook {
 	right: 307px;
 }
+
 #imagenpersona {
 	position: absolute;
 	top: 265px;
@@ -80,11 +88,13 @@ body{
 	width: 300px;
 	overflow: hidden;
 }
+
 #imagenpersona img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
+
 #milagropunto {
 	position: absolute;
 	top: 590px;
@@ -98,6 +108,7 @@ body{
 	font-weight: normal;
 	font-size: 24px;
 }
+
 #btnvotar {
 	position: absolute;
 	top: 635px;
@@ -116,6 +127,7 @@ body{
 	width: 100px;
 	text-decoration: none;
 }
+
 #graciasvoto {
 	font-size: 27px;
 	text-align: center;
@@ -128,6 +140,7 @@ body{
 	top: 635px;
 	position: absolute;
 }
+
 #score {
 	border: 0;
 	background: transparent;
@@ -144,6 +157,7 @@ body{
 	right: 0;
 	margin: 0 auto;
 }
+
 #timmer{
 	width: 380px;
 	height: 36px;
@@ -167,7 +181,6 @@ body{
 	cursor: pointer;
 }
 
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 	/* Styles */
@@ -182,24 +195,31 @@ body{
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 	}
+
 	#fangate {
 		background-image: url('../img/fangate.jpg');
 	}
+
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+
 	#step1 {
 		background-image: url('../img/step1.jpg');
 	}
+
 	#step2 {
 		background-image: url('../img/step2.jpg');
 	}
+
 	#step3 {
 		background-image: url('../img/step3.jpg');
 	}
+
 	#vote0 {
 		background-image: url('../img/vote0.jpg');
 	}
+
 	#timmer{
 		width: 150px;
 		height: 36px;
@@ -213,20 +233,24 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
+
 	#btnlike, #btnjoin, #btntakepic {
 		top: 37%;
 		left: 14%;
 		height: 35px;
 		width: 125px;
 	}
+
 	#btntakepic {
 		left: 0;
 	}
+
 	#btnok {
 		width: 32%;
 		height: 30px;
 		top: 44%;
 	}
+
 	#btntwitter, #btnfacebook {
 		position: absolute;
 		cursor: pointer;
@@ -234,35 +258,43 @@ body{
 		height: 30px;
 		top: 38%;
 	}
+
 	#btntwitter {
 		left: 41%;
 	}
+
 	#btnfacebook {
 		right: 39%;
 	}
+
 	#imagenpersona {
 		top: 20%;
 		height: 100px;
 		width: 100px;
 	}
+
 	#milagropunto {
 		top: 44%;
 		font-size: 14px;
 	}
+
 	#btnvotar {
 		top: 49%;
 		padding: 5px;
 		font-size: 13px;
 	}
+
 	#graciasvoto {
 		top: 49%;
 		font-size: 16px;
 	}
+
 	#score {
 		height: 45px;
 		width: 38%;
 		top: 32%;
 	}
+
 	#btnverbases{
 		position: absolute;
 		top: 56%;
@@ -273,13 +305,13 @@ body{
 	}
 }
 
-
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 370px) and (max-width: 480px) {
 /* Styles */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0 {
 		min-height: 460px;
 	}
+
 	#timmer{
 		width: 150px;
 		height: 36px;
@@ -293,6 +325,7 @@ body{
 		text-align: center;
 		padding: 15px 0px 0px;
 	}
+
 	#btnlike, #btnjoin, #btntakepic {
 		width: 186px;
 		height: 51px;
@@ -301,14 +334,17 @@ body{
 		top: 58%;
 		cursor: pointer;
 	}
+
 	#btntakepic {
 		left: 0;
 	}
+
 	#btnok {
 		width: 32%;
 		height: 43px;
 		top: 69%;
 	}
+
 	#btntwitter, #btnfacebook {
 		position: absolute;
 		cursor: pointer;
@@ -316,35 +352,43 @@ body{
 		height: 50px;
 		top: 59%;
 	}
+
 	#btntwitter {
 		left: 40%;
 	}
+
 	#btnfacebook {
 		right: 39%;
 	}
+
 	#score {
 		height: 45px;
 		width: 38%;
 		top: 52%;
 	}
+
 	#imagenpersona {
 		top: 34%;
 		height: 150px;
 		width: 150px;
 	}
+
 	#milagropunto {
 		top: 71%;
 		font-size: 14px;
 	}
+
 	#btnvotar {
 		top: 78%;
 		padding: 5px;
 		font-size: 13px;
 	}
+
 	#graciasvoto {
 		top: 78%;
 		font-size: 16px;
 	}
+
 	#btnverbases{
 		position: absolute;
 		top: 88%;
@@ -355,45 +399,52 @@ body{
 	}
 }
 
-
-
 @media only screen and (min-width : 321px) and (max-width: 361px) {
 	#imagenpersona {
 		top: 18%;
 		height: 120px;
 		width: 120px;
 	}
+
 	#milagropunto {
 		top: 39%;
 		font-size: 14px;
 	}
+
 	#btnvotar {
 		top: 43%;
 		padding: 5px;
 		font-size: 13px;
 	}
+
 	#graciasvoto {
 		top: 43%;
 		font-size: 16px;
 	}
+
 	#timmer {
 		top: 30%;
 		left: 12%;
 	}
+
 	#btnlike, #btnjoin, #btntakepic {
 		top: 31%;
 		height: 40px;
 		width: 140px;
 	}
+
 	#btnverbases {
 		top: 47%;
 	}
+
 	#score {
 		top: 28%;
 	}
+
 	#btnok {
 		top: 37%;
 	}
+
 	#btntwitter, #btnfacebook {
 		top: 32%;
 	}
@@ -413,12 +464,7 @@ body{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : portrait){
 /* Styles */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
-	/*width: 100%;
-	height: 100%;
-	z-index: 1000;*/
 	position: relative;
-	/*top: 15%;
-	left: 0px;*/
 	background-image: url('../img/bg0.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -426,29 +472,37 @@ body{
 	display: block;
 	margin: 0 auto; 
 	}
+
 	#fangate {
 		background-image: url('../img/fangate.jpg');
 	}
+
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+
 	#step1 {
 		background-image: url('../img/step1.jpg');
 	}
+
 	#step2 {
 		background-image: url('../img/step2.jpg');
 	}
+
 	#step3 {
 		background-image: url('../img/step3.jpg');
 	}
+
 	#vote0 {
 		background-image: url('../img/vote0.jpg');
 		background-size: 101% 101%;
 	}
+
 	#timmer{
 		top: 56%;
 		left: 8%;
 	}
+
 	#btnlike, #btnjoin, #btntakepic {
 		width: 290px;
 		height: 80px;
@@ -457,14 +511,17 @@ body{
 		top: 418px;
 		cursor: pointer;
 	}
+
 	#btntakepic {
 		left: 0;
 	}
+
 	#btnok {
 		width: 255px;
 		height: 67px;
 		top: 497px;
 	}
+
 	#btntwitter, #btnfacebook {
 		position: absolute;
 		cursor: pointer;
@@ -472,32 +529,40 @@ body{
 		height: 72px;
 		top: 428px;
 	}
+
 	#btntwitter {
 		left: 306px;
 	}
+
 	#btnfacebook {
 		right: 295px;
 	}
+
 	#imagenpersona {
 		top: 240px;
 		height: 300px;
 		width: 300px;
 	}
+
 	#milagropunto {
 		top: 560px;
 	}
+
 	#btnvotar {
 		top: 610px;
 		padding: 8px;
 	}
+
 	#graciasvoto {
 		top: 620px;
 	}
+
 	#score {
 		height: 98px;
 		width: 275px;
 		top: 366px;
 	}
+
 	#btnverbases{
 		left: 3%;
 		top: 630px;
@@ -508,12 +573,7 @@ body{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 /* Styles */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
-	/*width: 100%;
-	height: 100%;
-	z-index: 1000;*/
 	position: relative;
-	/*top: 15%;
-	left: 0px;*/
 	background-image: url('../img/bg0.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -522,42 +582,53 @@ body{
 	margin: 0 auto; 
 	background-position: top center;
 	}
+
 	#fangate {
 		background-image: url('../img/fangate.jpg');
 	}
+
 	#step0 {
 		background-image: url('../img/step0.jpg');
 	}
+
 	#step1 {
 		background-image: url('../img/step1.jpg');
 	}
+
 	#step2 {
 		background-image: url('../img/step2.jpg');
 	}
+
 	#step3 {
 		background-image: url('../img/step3.jpg');
 	}
+
 	#vote0 {
 		background-image: url('../img/vote0.jpg');
 	}
+
 	#timmer{
 		top: 61%;
 		left: 17%;
 	}
+
 	#btnlike, #btnjoin, #btntakepic {
 		top: 56%;
 		left: 21%;
 		height: 85px;
 		width: 314px;
 	}
+
 	#btntakepic {
 		left: 0;
 	}
+
 	#btnok {
 		width: 255px;
 		height: 67px;
 		top: 538px;
 	}
+
 	#btntwitter, #btnfacebook {
 		position: absolute;
 		cursor: pointer;
@@ -565,37 +636,44 @@ body{
 		height: 78px;
 		top: 462px;
 	}
+
 	#btntwitter {
 		left: 428px;
 	}
+
 	#btnfacebook {
 		right: 416px;
 	}
+
 	#imagenpersona {
 		top: 240px;
 		height: 300px;
 		width: 300px;
 	}
+
 	#milagropunto {
 		top: 560px;
 	}
+
 	#btnvotar {
 		top: 610px;
 		padding: 8px;
 	}
+
 	#graciasvoto {
 		top: 620px;
 	}
+
 	#score {
 		height: 98px;
 		width: 295px;
 		top: 398px;
 	}
+
 	#btnverbases{
 		left: 14%;
 	}
 }
-
 
 @media only screen and (min-width : 979px) and (max-width: 981px) {
 	#score {
@@ -608,45 +686,3 @@ body{
 		top: 48%;
 	}
 }
-
-
-
-
-
-
-
-
-
-/*#welcome{
-	width: 810px;
-	height: 800px;
-	z-index: 1000;
-	position: absolute;
-	top: 0px;
-	left: 50%;
-	margin-left: -405px;
-	background-image: url('../img/bg0.jpg');
-	background-repeat:no-repeat;
-	z-index: 1000;
-}
-#timmer{
-	width: 436px;
-	height: 81px;
-	position: absolute;
-	left: 50px;
-	top: 480px;
-	cursor: pointer;
-	font-family: sans-serif;
-	font-weight: bolder;
-	font-size: 45px;
-	text-align: center;
-	padding: 15px 0px 0px 0px;
-}
-#btnverbases{
-	position: absolute;
-	top: 680px;
-	left: 42px;
-	width: 552px;
-	height: 88px;
-	cursor: pointer;
-}*/
