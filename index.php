@@ -26,17 +26,22 @@
 		<div id="btntakepic"></div>
 	</div>
 	<div id="step2">
-		<input id="score" type="number" name="" value="0">
+		<input id="score" type="text" name="" value="0">
 		<div id="btnok"></div>
 	</div>
 	<div id="step3">
 		<div id="btntwitter"></div>
 		<div id="btnfacebook"></div>
 	</div>
-	<div id="vote0">
-		<span>#milogrocpech fue 900 puntos :)</span>
-		<div id="btnvotar"></div>
-		<span>¡¡Gracias por tu voto!!</span>
-	</div>
+
+<!-- 	<div id="vote0">
+		<div id="imagenpersona">
+			<img src="http://lorempixel.com/300/300/sports/1/">
+		</div>
+		<span id="milagropunto">#milogrocpech fue 900 puntos :)</span>
+		<a href="#" id="btnvotar">Votar</a>
+		<span id="graciasvoto" style="display: none;">¡¡Gracias por tu voto!!</span>
+	</div> -->
+	
 </body>
 </html>
