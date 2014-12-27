@@ -78,6 +78,12 @@ body{
 	margin: 0 auto;
 	height: 300px;
 	width: 300px;
+	overflow: hidden;
+}
+#imagenpersona img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 #milagropunto {
 	position: absolute;
@@ -111,7 +117,7 @@ body{
 	text-decoration: none;
 }
 #graciasvoto {
-	font-size: 18px;
+	font-size: 27px;
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif;
@@ -357,6 +363,7 @@ body{
 	}
 	#vote0 {
 		background-image: url('../img/vote0.jpg');
+		background-size: 101% 101%;
 	}
 	#timmer{
 		top: 56%;
@@ -390,6 +397,21 @@ body{
 	}
 	#btnfacebook {
 		right: 295px;
+	}
+	#imagenpersona {
+		top: 240px;
+		height: 300px;
+		width: 300px;
+	}
+	#milagropunto {
+		top: 560px;
+	}
+	#btnvotar {
+		top: 610px;
+		padding: 8px;
+	}
+	#graciasvoto {
+		top: 620px;
 	}
 	#score {
 		height: 98px;
@@ -468,6 +490,21 @@ body{
 	}
 	#btnfacebook {
 		right: 416px;
+	}
+	#imagenpersona {
+		top: 240px;
+		height: 300px;
+		width: 300px;
+	}
+	#milagropunto {
+		top: 560px;
+	}
+	#btnvotar {
+		top: 610px;
+		padding: 8px;
+	}
+	#graciasvoto {
+		top: 620px;
 	}
 	#score {
 		height: 98px;
