@@ -14,7 +14,7 @@
 			$('#timmer').countdown('2014/12/29 08:00:00', function(event) {
 				$(this).text(event.strftime('%D días %H:%M:%S'));
 			});
-			$('#btnverbases').click(function(event){
+			$('.btnverbases').on('click', function(event){
 				verBases();
 			});
 		});
@@ -27,7 +27,7 @@
 <body>
 	<div id="welcome">
 		<div id="timmer"></div>
-		<div id="btnverbases"></div>
+		<div class="btnverbases"></div>
 	</div>
 </body>
 </html>

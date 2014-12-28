@@ -38,7 +38,7 @@
 	</script>
 	<div id="fangate">
 		<div id="btnlike"></div>
-		<div id="btnverbases"></div>
+		<div class="btnverbases"></div>
 <!-- 		<div id="likecanvas">
 			<div class="fb-like" data-href="https://www.facebook.com/preuniversitariocpech" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false" style="position:relative;top:40%;left:35%;"></div>
 			<span id="close">Cerrar</span>
@@ -46,7 +46,7 @@
 	</div>
 	<div id="step0">
 		<div id="btnjoin"></div>
-		<div id="btnverbases"></div>
+		<div class="btnverbases"></div>
 	</div>
 	<div id="step1">
 		<div id="btntakepic"></div>

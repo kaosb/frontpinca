@@ -195,7 +195,7 @@ body{
 	padding: 15px 0px 0px;
 }
 
-#btnverbases{
+.btnverbases{
 	position: absolute;
 	top: 680px;
 	left: 42px;
@@ -203,6 +203,16 @@ body{
 	height: 88px;
 	cursor: pointer;
 }
+
+/* Iphone 6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+}
+
+/* Iphone 6 Plus */
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px){
+}
+
+/* Smartphones (portrait and landscape) ----- iPhone 2G-4S ----- */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
@@ -319,7 +329,7 @@ body{
 		top: 32%;
 	}
 
-	#btnverbases{
+	.btnverbases{
 		position: absolute;
 		top: 56%;
 		left: 3%;
@@ -414,7 +424,7 @@ body{
 		font-size: 16px;
 	}
 
-	#btnverbases{
+	.btnverbases{
 		position: absolute;
 		top: 88%;
 		left: 3%;
@@ -458,7 +468,7 @@ body{
 		width: 140px;
 	}
 
-	#btnverbases {
+	.btnverbases {
 		top: 47%;
 	}
 
@@ -589,7 +599,7 @@ body{
 		top: 366px;
 	}
 
-	#btnverbases{
+	.btnverbases{
 		left: 3%;
 		top: 630px;
 	}
@@ -697,7 +707,7 @@ body{
 		top: 398px;
 	}
 
-	#btnverbases{
+	.btnverbases{
 		left: 14%;
 	}
 }
