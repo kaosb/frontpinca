@@ -11,7 +11,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#welcome').show();
-			$('#timmer').countdown('2014/12/28 10:00:00', function(event) {
+			$('#timmer').countdown('2014/12/28 10:30:00', function(event) {
 				$(this).text(event.strftime('%D días %H:%M:%S'));
 			});
 			$('.btnverbases').on('click', function(event){

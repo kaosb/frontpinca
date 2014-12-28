@@ -49,6 +49,7 @@ $(document).ready(function(){
 				button: 'btntakepic',
 				url: 'src/guardarImagen.php',
 				name: 'uploadfile',
+				data: {'userID': $.participantdata.userID},
 				responseType: 'json',
 				allowedExtensions: ['jpg', 'jpeg', 'png', 'gif'],
 				maxSize: 1500,
