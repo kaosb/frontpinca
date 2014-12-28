@@ -1,10 +1,10 @@
 <?php
+include("conexion.php");
 if(isset($_POST['uid'])){
-	include("conexion.php");
 	$uid = $_POST['uid'];
 	// query para verificar si ya existe en la BD.
 	$query = "select * from participantes where userID = '$uid'";
-	$queryExiste = mysql_query($query,$link);
+	$queryExiste = mysql_query($query, $link);
 	$contadorExiste = mysql_num_rows($queryExiste);
 	if($contadorExiste < 1){
 		echo json_encode(array("code" => "0"));

@@ -29,12 +29,22 @@ $(document).ready(function(){
 			// Verifico si ya tengo los permisos y la aplicacion esta autorizada.
 			if(response && response.authResponse && response.status === 'connected'){
 				$.participantdata = buildParticipantObject(response);
+				console.log(isEmpty($.participantdata));
+				if(!isEmpty($.participantdata)){
+					console.log("entro");
+					checkParticipation($.participantdata.userID);
+				}
 			}else{
 				// Me autentico y solicito los permisos respectivos.
 				FB.login(function(response){
 					// Verifico si ya tengo los permisos y la aplicacion esta autorizada.
 					if (response && response.authResponse && response.status === 'connected'){
 						$.participantdata = buildParticipantObject(response);
+						console.log(isEmpty($.participantdata));
+						if(!isEmpty($.participantdata)){
+							console.log("entro");
+							checkParticipation($.participantdata.userID);
+						}
 					}else{
 						isFanChecknoPermisions();
 					}
@@ -43,7 +53,7 @@ $(document).ready(function(){
 		});
 
 
-		
+
 	});
 	
 
@@ -62,7 +72,6 @@ function buildParticipantObject(response){
 		$.participantdata.last_name = data.last_name;
 		$.participantdata.email = data.email;
 		$.participantdata.username = data.username;
-		//checkParticipation($.participantdata.userID);
 	});
 	return $.participantdata;
 }
@@ -129,12 +138,12 @@ function checkParticipation(uid){
 		data: { uid: uid },
 		success: function(data){
 			if(data.code == 1){
-				$('#slide001').hide();
-				$('#slide003').show();
+				$('#step0').hide();
+				$('#step3').show();
 				return false;
 			}else{
-				$('#slide001').hide();
-				$('#slide002').show();
+				$('#step0').hide();
+				$('#step1').show();
 				return false;
 			}
 		}
