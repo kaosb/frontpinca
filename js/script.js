@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	// Constante con la URL para enviar a los referidos.
+	APP_DOMAIN = 'http://milogrocpech.cl/vote.php';
 	/******************************************** Objeto Global para almacenar al participante y sus datos */
 	$.participantdata = {};
 	/******************* Al cargar el DOM muestra el step 0 */
@@ -70,7 +72,26 @@ $(document).ready(function(){
 			alert("Es necesario ingresar un puntaje valido.");
 		}
 	});
-
+	// Bindeamos los botones para compartir en redes sociales.
+	$('#btntwitter').on('click', function(event){
+		var width  = 575,
+		height = 400,
+		left   = ($(window).width()  - width)  / 2,
+		top    = ($(window).height() - height) / 2,
+		url    = 'http://twitter.com/share?text=' + '#MiLogroCpech fue '+$.participantdata.score+' puntos :) Vota por mi logro en: ' + APP_DOMAIN + '?id=' + $.participantdata.userID,
+		opts   = 'status=1' +
+				',width='  + width  +
+				',height=' + height +
+				',top='    + top    +
+				',left='   + left;
+		window.open(url, 'twitter', opts);
+	});
+	$('#btnfacebook').on('click', function(event){
+		FB.ui({
+			method: 'share',
+			href: APP_DOMAIN + '/?id=' + $.participantdata.userID + '&frompreview=true'
+		}, function(response){});
+	});
 });
 
 /******************* Funcion que permite crear y cargar los datos del usuario en el objeto participante. */
