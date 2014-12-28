@@ -36,20 +36,17 @@
 				<?php
 			}else{
 				// Pasar al flujo normal de voto.
-				include("conexion.php");
+				include("src/conexion.php");
 				$id = $_GET['id'];
 				$query = "select * from participantes where userID = '$id'";
 				$queryData = mysql_query($query, $link);
-				$row = mysql_fetch_row($queryData);
-				echo "<pre>";
-				print_r($row);
-				echo "</pre>";
+				$objecto = mysql_fetch_assoc($queryData);
 				?>
 				<div id="imagenpersona">
-					<img src="http://lorempixel.com/300/300/sports/1/">
+					<img width="300" src="img_uploads/<?php echo $objecto['userID']; ?>.jpg">
 				</div>
-				<span id="milagropunto">#milogrocpech fue 900 puntos :)</span>
-				<a href="#" id="btnvotar">Votar</a>
+				<span id="milagropunto">#milogrocpech fue <?php echo $objecto['score']; ?> puntos :)</span>
+				<a href="#" vote="<?php echo $objecto['userID']; ?>" id="btnvotar">Votar</a>
 				<span id="graciasvoto" style="display: none;">¡¡Gracias por tu voto!!</span>
 				<?php
 			}
@@ -65,6 +62,11 @@
 		$(document).ready(function(){
 			// Desplegamos la vista.
 			$('#vote0').show();
+			// Bindeamos el boton para votar.
+			$('#btnvotar').on('click', function(event){
+				alert($(this).attr('vote'));
+				event.preventDefault();
+			});
 		});
 	</script>
 </body>
