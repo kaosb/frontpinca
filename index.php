@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CPECH</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jquery.countdown.min.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script type="text/javascript" charset="utf-8">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.countdown.min.js" ></script>
+	<script src="js/touche.js" ></script>
+	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#welcome').show();
-			$('#timmer').countdown('2014/12/29', function(event) {
+			$('#timmer').countdown('2014/12/29 08:00:00', function(event) {
 				$(this).text(event.strftime('%D días %H:%M:%S'));
 			});
 			$('#btnverbases').click(function(event){

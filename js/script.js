@@ -1,18 +1,18 @@
 $(document).ready(function(){
 	/******************* Al cargar el DOM muestra el fangate */
-	$('#fangate').show();
+	// $('#fangate').show();
 	/******************* Bind para el boton ver bases que despliega las bases del concurso */
-	$('#btnverbases').click(function(event){
+	$('#btnverbases').on('click', function(event){
 		verBases();
 	});
 	/******************* Bind para el boton like que despliega el canvas que contiene el boton proporcionado por fb */
-	$('#btnlike').click(function(event){
+	$('#btnlike').on('click', function(event){
 		$('#likecanvas').show();
 	});
 	/******************* Bind para el boton cerrar del canvas que contiene el boton like */
-	$('#close').click(function(event){
-		$('#likecanvas').hide();
-	});
+	// $('#close').on('tap', function(event){
+	// $('#likecanvas').hide();
+	
 });
 
 /******************* Funcion que permite abrir las bases del concurso */
@@ -34,7 +34,7 @@ function fanGateIni(){
 				}else{
 					isFanChecknoPermisions();
 				}
-			},{scope:'user_likes, email, publish_stream'});
+			},{scope:'user_likes, email'});
 		}
 	});
 }
@@ -56,4 +56,14 @@ function isFanCheck(page_id){
 function isFanChecknoPermisions(){
 	alert("Para usar esta aplicación, es necesario concedas los permisos necesarios para corroborar si ya eres fan de esta pagina.");
 	location.reload();
+}
+
+/******************* Virifica si un objeto esta vacio */
+function isEmpty(obj){
+	for(var prop in obj){
+		if(obj.hasOwnProperty(prop)){
+			return false;
+		}
+	}
+	return true;
 }
