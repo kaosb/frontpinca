@@ -6,10 +6,10 @@
 	<title>CPECH</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<meta property="og:title" content="#MiLogroCpech" />
-	<meta property="og:description" content="Ya cree mi combinación perfecta con el Heladero Freddo Ayúdame a ganar votando por mi combinación y participa creando la tuya." /> 
-	<meta property="og:image" content="https://reframe.cl/proyectos/freddo/cl/img/sharesquare.png" />
-	<meta property="og:site_name" content="Mi logro Cpech" />
+	<meta property="og:title" content="Mi logro Cpech" />
+	<meta property="og:description" content="#MyLogroCpech vota por mi logro en: http://milogrocpech.cl/vote.php?id=" /> 
+	<meta property="og:image" content="http://milogrocpech.cl/img/sharesquare.png" />
+	<meta property="og:site_name" content="Cpech" />
 </head>
 <body>
 	<div id="vote0">
