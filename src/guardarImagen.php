@@ -14,9 +14,11 @@
 	// echo json_encode($data);
 
 	require('Uploader.php');
-	$upload_dir = '/img_uploads/';
+	$upload_dir = '../img_uploads/';
 	$valid_extensions = array('gif', 'png', 'jpeg', 'jpg');
 	$Upload = new FileUpload('uploadfile');
+	$ext = $Upload->getExtension();
+	$Upload->newFileName = 'customFileName.'.$ext;
 	$result = $Upload->handleUpload($upload_dir, $valid_extensions);
 	if(!$result){
 		echo json_encode(array('success' => false, 'msg' => $Upload->getErrorMsg()));   

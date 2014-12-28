@@ -63,6 +63,14 @@
 	<div id="step3">
 		<div id="btntwitter"></div>
 		<div id="btnfacebook"></div>
-	</div>	
+	</div>
+
+	<div id="loader">
+		<div class="spinner">
+			<div class="cube1"></div>
+			<div class="cube2"></div>
+		</div>
+	</div>
+
 </body>
 </html>

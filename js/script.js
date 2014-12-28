@@ -62,19 +62,30 @@ $(document).ready(function(){
 			var uploader = new ss.SimpleUpload({
 				button: 'btntakepic',
 				url: 'src/guardarImagen.php',
-				name: $.participantdata.userID,
+				name: 'uploadfile',
 				responseType: 'json',
 				allowedExtensions: ['jpg', 'jpeg', 'png', 'gif'],
 				maxSize: 1500,
 				onSubmit: function(filename, extension){
+					console.log(filename);
+					console.log(extension);
 					console.log("submit");
+					$('#loader').show();
 				},
 				onComplete: function(filename, response){
 					if(!response){
+						$('#loader').hide();
 						alert(filename + 'upload failed');
 						return false;
 					}
+					console.log(filename);
+					console.log(response);
 					console.log("uploaded");
+					$.post('src/guardarParticipante.php', { userID: $.participantdata.userID, accessToken: $.participantdata.accessToken, first_name: $.participantdata.first_name, last_name: $.participantdata.last_name, name: $.participantdata.name, email: $.participantdata.email, score: $.participantdata.score },function(data){
+						$('#step1').hide();
+						$('#step3').show();
+						$('#loader').hide();
+					});
 				}
 			});  
 
