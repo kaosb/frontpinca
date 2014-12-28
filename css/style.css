@@ -59,11 +59,11 @@ body{
 }
 
 #btnlike, #btnjoin, #btntakepic {
-	width: 313px;
-	height: 87px;
+	width: 330px;
+	height: 115px;
 	position: absolute;
-	left: 115px;
-	top: 450px;
+	left: 105px;
+	top: 435px;
 	cursor: pointer;
 }
 
@@ -216,19 +216,38 @@ body{
 
 .btnverbases{
 	position: absolute;
-	top: 680px;
-	left: 42px;
-	width: 552px;
-	height: 88px;
+	top: 660px;
+	left: 20px;
+	width: 600px;
+	height: 130px;
 	cursor: pointer;
+}
+
+/* Nexus 5 */
+@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+/* Iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+	.btnverbases {
+		position: absolute;
+		top: 54%;
+		left: 2%;
+		width: 80%;
+		height: 170px;
+		cursor: pointer;
+	}
 }
 
 /* Iphone 6 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+
 }
 
 /* Iphone 6 Plus */
 @media only screen and (min-device-width : 540px) and (max-device-width : 960px){
+
 }
 
 /* Smartphones (portrait and landscape) ----- iPhone 2G-4S ----- */
@@ -288,10 +307,10 @@ body{
 	}
 
 	#btnlike, #btnjoin, #btntakepic {
-		top: 37%;
-		left: 14%;
-		height: 35px;
-		width: 125px;
+		top: 36%;
+		left: 10%;
+		height: 160px;
+		width: 440px;
 	}
 
 	#btntakepic {
@@ -300,23 +319,25 @@ body{
 
 	#btnok {
 		width: 32%;
-		height: 30px;
+		height: 100px;
 		top: 44%;
 	}
 
 	#btntwitter, #btnfacebook {
 		position: absolute;
 		cursor: pointer;
-		width: 30px;
-		height: 30px;
-		top: 38%;
+		width: 98px;
+		height: 98px;
+		top: 32%;
 	}
 
 	#btntwitter {
-		left: 41%;
+		top: 38%;
+		left: 40%;
 	}
 
 	#btnfacebook {
+		top: 38%;
 		right: 39%;
 	}
 
@@ -356,10 +377,10 @@ body{
 
 	.btnverbases{
 		position: absolute;
-		top: 56%;
-		left: 3%;
+		top: 54%;
+		left: 2%;
 		width: 80%;
-		height: 40px;
+		height: 170px;
 		cursor: pointer;
 	}
 }
@@ -500,13 +521,17 @@ body{
 	}
 
 	#btnlike, #btnjoin, #btntakepic {
-		top: 31%;
-		height: 40px;
-		width: 140px;
+		top: 30%;
+		height: 60px;
+		width: 160px;
+		left: 12%;
 	}
 
 	.btnverbases {
-		top: 47%;
+		top: 45%;
+		left: 2%;
+		width: 300px;
+		height: 70px;
 	}
 
 	#score {
@@ -577,12 +602,12 @@ body{
 	}
 
 	#btnlike, #btnjoin, #btntakepic {
-		width: 290px;
-		height: 80px;
+		width: 340px;
 		position: absolute;
-		left: 108px;
-		top: 418px;
+		left: 100px;
+		top: 420px;
 		cursor: pointer;
+		height: 130px;
 	}
 
 	#btntakepic {
@@ -643,7 +668,9 @@ body{
 
 	.btnverbases{
 		left: 3%;
-		top: 630px;
+		top: 640px;
+		height: 160px;
+		width: 580px;
 	}
 }
 
@@ -761,13 +788,17 @@ body{
 
 @media only screen and (min-width : 979px) and (max-width: 981px) {
 	#score {
-		top: 49%;
+		top: 33%;
+		height: 8%;
+		left: 1%;
 	}
 }
 
 @media only screen and (min-width : 799px) and (max-width: 801px) {
 	#score {
-		top: 48%;
+		top: 28%;
+		height: 6%;
+		left: 1%;
 	}
 }
 
@@ -779,13 +810,14 @@ body{
 #loader{
 	display: none;
 	z-index: 5000;
-	background-color: #FFF;
-	width: 300px;
-	height: 300px;
-	margin-left: -150px;
-	margin-top: -150px;
-	position: relative;
-	top: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	padding-top: 40%;
+	width: 100%;
+	height: 50%;
+	margin-left: -50%;
+	margin-top: -90%;
+	position: absolute;
+	top: 60%;
 	left: 50%;
 }
 

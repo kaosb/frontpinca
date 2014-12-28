@@ -75,11 +75,12 @@ $(document).ready(function(){
 	});
 	// Bindeamos los botones para compartir en redes sociales.
 	$('#btntwitter').on('click', function(event){
+		var mensaje = 'Mi logro Cpech Vota por mi logro en: ' + APP_DOMAIN + '?id=' + $.participantdata.userID;
 		var width  = 575,
 		height = 400,
 		left   = ($(window).width()  - width)  / 2,
 		top    = ($(window).height() - height) / 2,
-		url    = 'http://twitter.com/share?text=' + '#MiLogroCpech fue '+$.participantdata.score+' puntos :) Vota por mi logro en: ' + APP_DOMAIN + '?id=' + $.participantdata.userID,
+		url    = 'http://twitter.com/share?text=' + mensaje +'&hashtags=milogrocpech',
 		opts   = 'status=1' +
 				',width='  + width  +
 				',height=' + height +
@@ -101,7 +102,6 @@ function buildParticipantObject(response){
 	$.participantdata.accessToken = response.authResponse.accessToken;
 	$.participantdata.userID = response.authResponse.userID;
 	FB.api('/me', function(data){
-		console.log(data);
 		$.participantdata.name = data.name;
 		$.participantdata.first_name = data.first_name;
 		$.participantdata.last_name = data.last_name;
@@ -150,4 +150,38 @@ function checkParticipation(uid){
 			}
 		}
 	});
+}
+
+/******************* Cookies Toolbox */
+/******************* funcion capaz de crear una Cookie */
+function createCookie(name, value, days){
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		var expires = "; expires=" + date.toGMTString();
+	}
+	else var expires = "";
+	var fixedName = '<%= Request["formName"] %>';
+	name = fixedName + name;
+	document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+/******************* funcion capaz de leer una Cookie */
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+
+/******************* funcion capaz de eliminar una Cookie */
+function deleteCookie(name, path, domain){
+	path = (path ? ";path=" + path : "");
+	domain = (domain ? ";domain=" + domain : "");
+	var expiration = "Thu, 01-Jan-1970 00:00:01 GMT";
+	document.cookie = name + "=" + path + domain + ";expires=" + expiration;
 }
