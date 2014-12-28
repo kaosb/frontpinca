@@ -16,22 +16,17 @@ $(document).ready(function(){
 	/******************* Bind para el boton cerrar del canvas que contiene el boton like */
 	// $('#close').on('tap', function(event){
 	// $('#likecanvas').hide();
-	$('#btnjoin').on('click', function(event){
-		
-		// Creamos el objeto para almacenar dichos datos.
-		// Verificamos si ya participo.
-		// Actuamos conforme al paso anterior
-		// 
-		
 
+	// Acciones asociadas al boton participar.
+	$('#btnjoin').on('click', function(event){
 		// Pedimos los datos y/o los permisos para acceder a los datos.
 		FB.getLoginStatus(function(response){
 			// Verifico si ya tengo los permisos y la aplicacion esta autorizada.
 			if(response && response.authResponse && response.status === 'connected'){
+				console.log(response);
 				$.participantdata = buildParticipantObject(response);
-				console.log(isEmpty($.participantdata));
+				// Verificamos si ya participo.
 				if(!isEmpty($.participantdata)){
-					console.log("entro");
 					checkParticipation($.participantdata.userID);
 				}
 			}else{
@@ -40,9 +35,8 @@ $(document).ready(function(){
 					// Verifico si ya tengo los permisos y la aplicacion esta autorizada.
 					if (response && response.authResponse && response.status === 'connected'){
 						$.participantdata = buildParticipantObject(response);
-						console.log(isEmpty($.participantdata));
+						// Verificamos si ya participo.
 						if(!isEmpty($.participantdata)){
-							console.log("entro");
 							checkParticipation($.participantdata.userID);
 						}
 					}else{
@@ -51,13 +45,62 @@ $(document).ready(function(){
 				},{ scope:'email, public_profile'});
 			}
 		});
-
-
-
 	});
-	
+
+	// Bindeamos el input y la validacion para capturar el puntaje.
+	$('#btnok').on('click', function(event){
+		var score = parseInt($('#score').val(), 10);
+		console.log(score);
+		if(typeof score === 'number' && (score % 1) === 0 && score > 0){
+			$.participantdata.score = score;
+			console.log($.participantdata);
+			$('#step2').hide();
+			$('#step1').show();
 
 
+
+			var uploader = new ss.SimpleUpload({
+				button: 'btntakepic',
+				url: 'src/guardarImagen.php',
+				name: $.participantdata.userID,
+				responseType: 'json',
+				allowedExtensions: ['jpg', 'jpeg', 'png', 'gif'],
+				maxSize: 1500,
+				onSubmit: function(filename, extension){
+					console.log("submit");
+				},
+				onComplete: function(filename, response){
+					if(!response){
+						alert(filename + 'upload failed');
+						return false;
+					}
+					console.log("uploaded");
+				}
+			});  
+
+
+			// Uploader y post para los datos del concurso.
+			// Bindeamos el file imput para el preload del archivo.
+			// $('#imageform').fileUpload({
+			// 	uploadData    : { userID: $.participantdata.userID }, // Append POST data to the upload
+			// 	submitData    : { userID: $.participantdata.userID, accessToken: $.participantdata.accessToken, first_name: $.participantdata.first_name, last_name: $.participantdata.last_name, name: $.participantdata.name, email: $.participantdata.email, score: $.participantdata.score }, // Append POST data to the form submit
+			// 	uploadOptions : { dataType : 'json' }, // Customise the parameters passed to the $.ajax() call on uploads. You can use any of the normal $.ajax() params
+			// 	submitOptions : { dataType : 'json' }, // Customise the parameters passed to the $.ajax() call on the form submit. You can use any of the normal $.ajax() params
+			// 	before        : function(){}, // Run stuff before the upload happens
+			// 	beforeSubmit  : function(uploadData){ console.log(uploadData); return true; }, // access the data returned by the upload return false to stop the submit ajax call
+			// 	success       : function(data, textStatus, jqXHR){ console.log(data); }, // Callback for the submit success ajax call
+			// 	error         : function(jqXHR, textStatus, errorThrown){ console.log(jqXHR); }, // Callback if an error happens with your upload call or the submit call
+			// 	complete      : function(jqXHR, textStatus){ console.log(jqXHR); } // Callback on completion
+			// });
+			// Acciones asociadas al boton subir foto trigger del action del file uploader.
+			$('#btntakepic').on('click', function(event){
+				$('#imageinput').click();
+				// $('#imageinput').trigger('click');
+			});
+		}else{
+			alert("Es necesario ingresar un puntaje valido.");
+		}
+	});
 
 });
 
@@ -67,11 +110,11 @@ function buildParticipantObject(response){
 	$.participantdata.accessToken = response.authResponse.accessToken;
 	$.participantdata.userID = response.authResponse.userID;
 	FB.api('/me', function(data){
+		console.log(data);
 		$.participantdata.name = data.name;
 		$.participantdata.first_name = data.first_name;
 		$.participantdata.last_name = data.last_name;
 		$.participantdata.email = data.email;
-		$.participantdata.username = data.username;
 	});
 	return $.participantdata;
 }
@@ -143,10 +186,9 @@ function checkParticipation(uid){
 				return false;
 			}else{
 				$('#step0').hide();
-				$('#step1').show();
+				$('#step2').show();
 				return false;
 			}
 		}
 	});
 }
-

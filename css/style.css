@@ -151,6 +151,25 @@ body{
 	text-decoration: none;
 }
 
+#btnenviar {
+	position: absolute;
+	top: 635px;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #f39905;
+	border: 1px solid #fff;
+	padding: 12px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100px;
+	text-decoration: none;
+}
+
 #graciasvoto {
 	font-size: 27px;
 	text-align: center;
@@ -318,6 +337,12 @@ body{
 		font-size: 13px;
 	}
 
+	#btnenviar {
+		top: 49%;
+		padding: 5px;
+		font-size: 13px;
+	}
+
 	#graciasvoto {
 		top: 49%;
 		font-size: 16px;
@@ -419,6 +444,12 @@ body{
 		font-size: 13px;
 	}
 
+	#btnenviar {
+		top: 49%;
+		padding: 5px;
+		font-size: 13px;
+	}
+
 	#graciasvoto {
 		top: 78%;
 		font-size: 16px;
@@ -447,6 +478,12 @@ body{
 	}
 
 	#btnvotar {
+		top: 43%;
+		padding: 5px;
+		font-size: 13px;
+	}
+
+	#btnenviar {
 		top: 43%;
 		padding: 5px;
 		font-size: 13px;
@@ -589,6 +626,11 @@ body{
 		padding: 8px;
 	}
 
+	#btnenviar {
+		top: 610px;
+		padding: 8px;
+	}
+
 	#graciasvoto {
 		top: 620px;
 	}
@@ -693,6 +735,11 @@ body{
 	}
 
 	#btnvotar {
+		top: 610px;
+		padding: 8px;
+	}
+
+	#btnenviar {
 		top: 610px;
 		padding: 8px;
 	}

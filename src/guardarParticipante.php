@@ -7,12 +7,9 @@ if(isset($_POST['userID'])){
 	$last_name = $_POST['last_name'];
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$newemail = $_POST['newemail'];
-	$username = $_POST['username'];
-	$optselect = $_POST['optselect'];
-	$origen = $_POST['origen'];
-	$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, username, optselect, origen)
-					VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$username', '$optselect', '$origen')";
+	$score = $_POST['score'];
+	$queryInsert = "INSERT INTO participantes (userID, accessToken, first_name, last_name, name, email, score)
+					VALUES ('$userID', '$accessToken', '$first_name', '$last_name', '$name', '$email', '$score')";
 	$queryInsert = utf8_decode($queryInsert);
 	if(mysql_query($queryInsert,$link)){
 		// insert exitoso
