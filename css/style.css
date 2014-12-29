@@ -237,7 +237,7 @@ body{
 		position: absolute;
 		top: 15%;
 		left: 0px;
-		background-image: url('../img/bg0_max480.jpg');
+		background-image: url('../img/bg0.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		display: none;
@@ -828,8 +828,8 @@ body{
     }
 
     #timmer {
-        top: 30%;
-        left: 12%;
+        top: 34%;
+        left: 16%;
     }
 
     #btnlike, #btnjoin, #btntakepic {
@@ -862,7 +862,65 @@ body{
 
 /* Iphone 6 Plus */
 @media only screen and (min-device-width : 540px) and (max-device-width : 960px){
+	/* STYLES GO HERE */
+    #imagenpersona {
+        top: 18%;
+        height: 120px;
+        width: 120px;
+    }
 
+    #milagropunto {
+        top: 39%;
+        font-size: 14px;
+    }
+
+    #btnvotar {
+        top: 43%;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #btnenviar {
+        top: 43%;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #graciasvoto {
+        top: 43%;
+        font-size: 16px;
+    }
+
+    #timmer {
+        top: 30%;
+        left: 12%;
+    }
+
+    #btnlike, #btnjoin, #btntakepic {
+        top: 30%;
+        height: 60px;
+        width: 160px;
+        left: 12%;
+    }
+
+    .btnverbases {
+        top: 45%;
+        left: 2%;
+        width: 300px;
+        height: 70px;
+    }
+
+    #score {
+        top: 28%;
+    }
+
+    #btnok {
+        top: 37%;
+    }
+
+    #btntwitter, #btnfacebook {
+        top: 32%;
+    }
 }
 
 /* */
