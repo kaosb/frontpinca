@@ -799,6 +799,41 @@ body{
 /* Iphone 6 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px){
 /* STYLES GO HERE */
+	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
+		position: relative;
+		background-image: url('../img/bg0.jpg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		background-position: top center;
+		display: none;
+	}
+
+	#fangate {
+		background-image: url('../img/fangate.jpg');
+	}
+
+	#step0 {
+		background-image: url('../img/step0.jpg');
+	}
+
+	#step1 {
+		background-image: url('../img/step1.jpg');
+	}
+
+	#step2 {
+		background-image: url('../img/step2.jpg');
+	}
+
+	#step3 {
+		background-image: url('../img/step3.jpg');
+	}
+
+	#vote0 {
+		background-image: url('../img/vote0.jpg');
+	}
     #imagenpersona {
         top: 18%;
         height: 120px;
@@ -829,7 +864,7 @@ body{
 
     #timmer {
         top: 34%;
-        left: 16%;
+        left: 25%;
     }
 
     #btnlike, #btnjoin, #btntakepic {
