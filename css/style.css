@@ -223,32 +223,7 @@ body{
 	cursor: pointer;
 }
 
-/* Nexus 5 */
-@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3){
 
-}
-
-/* Iphone 5 */
-@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
-	.btnverbases {
-		position: absolute;
-		top: 54%;
-		left: 2%;
-		width: 80%;
-		height: 170px;
-		cursor: pointer;
-	}
-}
-
-/* Iphone 6 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
-
-}
-
-/* Iphone 6 Plus */
-@media only screen and (min-device-width : 540px) and (max-device-width : 960px){
-
-}
 
 /* Smartphones (portrait and landscape) ----- iPhone 2G-4S ----- */
 
@@ -684,7 +659,7 @@ body{
 		background-size: contain;
 		width: 100%;
 		display: block;
-		margin: 0 auto; 
+		margin: 0 auto;
 		background-position: top center;
 		display: none;
 	}
@@ -802,8 +777,95 @@ body{
 	}
 }
 
+/* Nexus 5 */
+@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+/* Iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+	.btnverbases {
+		position: absolute;
+		top: 54%;
+		left: 2%;
+		width: 80%;
+		height: 170px;
+		cursor: pointer;
+	}
+}
 
 
+
+/* Iphone 6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+/* STYLES GO HERE */
+    #imagenpersona {
+        top: 18%;
+        height: 120px;
+        width: 120px;
+    }
+
+    #milagropunto {
+        top: 39%;
+        font-size: 14px;
+    }
+
+    #btnvotar {
+        top: 43%;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #btnenviar {
+        top: 43%;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #graciasvoto {
+        top: 43%;
+        font-size: 16px;
+    }
+
+    #timmer {
+        top: 30%;
+        left: 12%;
+    }
+
+    #btnlike, #btnjoin, #btntakepic {
+        top: 30%;
+        height: 60px;
+        width: 160px;
+        left: 12%;
+    }
+
+    .btnverbases {
+        top: 45%;
+        left: 2%;
+        width: 300px;
+        height: 70px;
+    }
+
+    #score {
+        top: 28%;
+    }
+
+    #btnok {
+        top: 37%;
+    }
+
+    #btntwitter, #btnfacebook {
+        top: 32%;
+    }
+
+}
+
+/* Iphone 6 Plus */
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px){
+
+}
+
+/* */
 
 
 
@@ -835,7 +897,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  
+
   -webkit-animation: cubemove 1.8s infinite ease-in-out;
   animation: cubemove 1.8s infinite ease-in-out;
 }
@@ -853,19 +915,19 @@ body{
 }
 
 @keyframes cubemove {
-  25% { 
+  25% {
     transform: translateX(42px) rotate(-90deg) scale(0.5);
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-  } 50% { 
+  } 50% {
     transform: translateX(42px) translateY(42px) rotate(-179deg);
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-  } 50.1% { 
+  } 50.1% {
     transform: translateX(42px) translateY(42px) rotate(-180deg);
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-  } 75% { 
+  } 75% {
     transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
     -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-  } 100% { 
+  } 100% {
     transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg);
   }
