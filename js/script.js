@@ -89,12 +89,33 @@ $(document).ready(function(){
 		window.open(url, 'twitter', opts);
 	});
 	$('#btnfacebook').on('click', function(event){
-		FB.ui({
-			method: 'share',
-			href: APP_DOMAIN + '/?id=' + $.participantdata.userID + '&frompreview=true'
-		}, function(response){});
+		// FB.ui({
+		// 	method: 'share',
+		// 	href: APP_DOMAIN + '/?id=' + $.participantdata.userID + '&frompreview=true'
+		// }, function(response){});
+		openFbPopUp($.participantdata.userID);
 	});
 });
+
+function openFbPopUp(userID){
+	FB.ui(
+	{
+		method: 'feed',
+		name: 'Cpech',
+		link: "http://milogrocpech.cl/vote.php?id="+userID,
+		picture: 'http://milogrocpech.cl/img/sharesquare.png',
+		caption: 'Mi logro Cpech',
+		description: 'Vota por mi #milogrocpech en: http://milogrocpech.cl/vote.php?id='+userID
+	},
+	function(response) {
+		if (response && response.post_id) {
+			alert('Tu post fue publicado en Facebook.');
+		} else {
+			alert('No fue posible publicar tu post en Facebook.');
+		}
+	}
+	);
+}
 
 /******************* Funcion que permite crear y cargar los datos del usuario en el objeto participante. */
 function buildParticipantObject(response){
