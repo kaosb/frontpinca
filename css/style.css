@@ -240,7 +240,6 @@ body{
 		background-image: url('../img/bg0.jpg');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		display: none;
 	}
 
 	#fangate {
@@ -797,7 +796,7 @@ body{
 
 
 /* Iphone 6 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px), @media only screen and (min-device-width : 375px) and (max-device-width : 667px)  and (-webkit-min-device-pixel-ratio : 2){
 /* STYLES GO HERE */
 	#welcome, #fangate, #step0, #step1, #step2, #step3, #vote0{
 		position: relative;
