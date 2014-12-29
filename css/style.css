@@ -808,8 +808,8 @@ body{
 		display: block;
 		margin: 0 auto;
 		background-position: top center;
-		display: none;
-	}
+/*		display: none;
+*/	}
 
 	#fangate {
 		background-image: url('../img/fangate.jpg');
@@ -863,8 +863,8 @@ body{
     }
 
     #timmer {
-        top: 34%;
-        left: 25%;
+        top: 46%;
+        left: 14%;
     }
 
     #btnlike, #btnjoin, #btntakepic {
