@@ -10,7 +10,7 @@
 	<script src="js/SimpleAjaxUploader.min.js" ></script>
 	<script src="js/script.js" ></script>
 	<meta property="og:title" content="Mi logro Cpech" />
-	<meta property="og:description" content="#MyLogroCpech participa compartiendo tu logro en: http://milogrocpech.cl" /> 
+	<meta property="og:description" content="#MiLogroCpech participa compartiendo tu logro en: http://milogrocpech.cl" /> 
 	<meta property="og:image" content="http://milogrocpech.cl/img/sharesquare.png" />
 	<meta property="og:site_name" content="Cpech" />
 </head>

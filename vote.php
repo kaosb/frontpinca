@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<meta property="og:title" content="Mi logro Cpech" />
-	<meta property="og:description" content="#MyLogroCpech vota por mi logro en: http://milogrocpech.cl/vote.php?id=<?php echo $_GET['id']; ?>" /> 
+	<meta property="og:description" content="#MiLogroCpech vota por mi logro en: http://milogrocpech.cl/vote.php?id=<?php echo $_GET['id']; ?>" /> 
 	<meta property="og:image" content="http://milogrocpech.cl/img/sharesquare.png" />
 	<meta property="og:site_name" content="Cpech" />
 </head>
